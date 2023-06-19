@@ -7,9 +7,13 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Head.tsx";
-import * as $$$$$$$$1 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$0 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$2 from "./sections/GlobalTags.tsx";
+import * as $$$$$$$$3 from "./sections/Head.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/LoseSales.tsx";
+import * as $$$$$$$$6 from "./sections/Space.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -174,9 +178,13 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/decolandingpage/sections/DesignSystem.tsx": $$$$$$$$1,
-    "deco-sites/decolandingpage/sections/GetStarted.tsx": $$$$$$$$2,
-    "deco-sites/decolandingpage/sections/Head.tsx": $$$$$$$$0,
+    "deco-sites/decolandingpage/sections/DesignSystem.tsx": $$$$$$$$0,
+    "deco-sites/decolandingpage/sections/GetStarted.tsx": $$$$$$$$1,
+    "deco-sites/decolandingpage/sections/GlobalTags.tsx": $$$$$$$$2,
+    "deco-sites/decolandingpage/sections/Head.tsx": $$$$$$$$3,
+    "deco-sites/decolandingpage/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/decolandingpage/sections/LoseSales.tsx": $$$$$$$$5,
+    "deco-sites/decolandingpage/sections/Space.tsx": $$$$$$$$6,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,

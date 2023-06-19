@@ -74,7 +74,11 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/decolandingpage/sections/DesignSystem.tsx",
               "deco-sites/decolandingpage/sections/GetStarted.tsx",
+              "deco-sites/decolandingpage/sections/GlobalTags.tsx",
               "deco-sites/decolandingpage/sections/Head.tsx",
+              "deco-sites/decolandingpage/sections/Header.tsx",
+              "deco-sites/decolandingpage/sections/LoseSales.tsx",
+              "deco-sites/decolandingpage/sections/Space.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configOCC.global.tsx",
@@ -7528,6 +7532,71 @@
       ],
       "title": "deco-sites/decolandingpage/sections/Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZGVyLnRzeA==@props": {
+      "type": "object",
+      "properties": {
+        "imageDescription": {
+          "type": "string",
+          "title": "Image Description"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "imageDescription",
+        "title",
+        "description"
+      ],
+      "title": "deco-sites/decolandingpage/sections/Header.tsx@props"
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTG9zZVNhbGVzLnRzeA==@props": {
+      "type": "object",
+      "properties": {
+        "principalText": {
+          "type": "string",
+          "title": "Principal Text"
+        },
+        "description": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Description"
+        }
+      },
+      "required": [
+        "principalText",
+        "description"
+      ],
+      "title": "deco-sites/decolandingpage/sections/LoseSales.tsx@props"
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvU3BhY2UudHN4@props": {
+      "type": "object",
+      "properties": {
+        "spaceText": {
+          "type": "string",
+          "title": "Space Text"
+        },
+        "description": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Description"
+        }
+      },
+      "required": [
+        "spaceText",
+        "description"
+      ],
+      "title": "deco-sites/decolandingpage/sections/Space.tsx@props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
       "properties": {
@@ -9889,6 +9958,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvR2xvYmFsVGFncy50c3g=": {
+      "title": "deco-sites/decolandingpage/sections/GlobalTags.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/decolandingpage/sections/GlobalTags.tsx"
+          ],
+          "default": "deco-sites/decolandingpage/sections/GlobalTags.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZC50c3g=": {
       "title": "deco-sites/decolandingpage/sections/Head.tsx",
       "type": "object",
@@ -9907,6 +9992,69 @@
             "deco-sites/decolandingpage/sections/Head.tsx"
           ],
           "default": "deco-sites/decolandingpage/sections/Head.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZGVyLnRzeA==": {
+      "title": "deco-sites/decolandingpage/sections/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZGVyLnRzeA==@props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/decolandingpage/sections/Header.tsx"
+          ],
+          "default": "deco-sites/decolandingpage/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTG9zZVNhbGVzLnRzeA==": {
+      "title": "deco-sites/decolandingpage/sections/LoseSales.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTG9zZVNhbGVzLnRzeA==@props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/decolandingpage/sections/LoseSales.tsx"
+          ],
+          "default": "deco-sites/decolandingpage/sections/LoseSales.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvU3BhY2UudHN4": {
+      "title": "deco-sites/decolandingpage/sections/Space.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvU3BhY2UudHN4@props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/decolandingpage/sections/Space.tsx"
+          ],
+          "default": "deco-sites/decolandingpage/sections/Space.tsx"
         }
       }
     },
@@ -11038,7 +11186,19 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvR2V0U3RhcnRlZC50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvR2xvYmFsVGFncy50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTG9zZVNhbGVzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvU3BhY2UudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="
