@@ -23,7 +23,7 @@ export default function Card({ textUnder, card }: Props) {
       <div className={"flex items-center flex-col w-[90%] mx-auto"}>
         <p
           id={"TitleCards"}
-          className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%]"}
+          className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%] leading-[38px] lg:leading-[77px] gap-[20px] lg:gap-0"}
         >
           <svg class="h-[46px] w-[156px]">
             <use href="/icons.svg#Logo" />
@@ -58,7 +58,7 @@ export default function Card({ textUnder, card }: Props) {
                 {item.title}
               </h2>
               <p
-                className={"text-white max-w-[284px] text-[20px] lg:text-[24px] text-center lg:max-w-[332px]"}
+                className={"text-white max-w-[284px] text-[20px] lg:text-[24px] text-center lg:max-w-[274px] lg:min-h-[144px]"}
                 dangerouslySetInnerHTML={{ __html: item.description }}
               >
               </p>

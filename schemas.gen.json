@@ -7720,6 +7720,34 @@
       ],
       "title": "deco-sites/decolandingpage/sections/LoseSales.tsx@props"
     },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTWFkZUJ5LnRzeA==@Image": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Src"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        }
+      },
+      "required": [
+        "src",
+        "alt",
+        "width",
+        "height"
+      ],
+      "title": "Image"
+    },
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTWFkZUJ5LnRzeA==@props": {
       "type": "object",
       "properties": {
@@ -7733,10 +7761,7 @@
             "type": "object",
             "properties": {
               "image": {
-                "type": [
-                  "string",
-                  "null"
-                ],
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvTWFkZUJ5LnRzeA==@Image",
                 "title": "Image"
               },
               "name": {
@@ -7749,6 +7774,7 @@
               }
             },
             "required": [
+              "image",
               "name",
               "link"
             ]
@@ -7775,6 +7801,41 @@
       ],
       "title": "deco-sites/decolandingpage/sections/Space.tsx@props"
     },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvVHJ1c3RlZEJ5LnRzeA==@Image": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Src"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        }
+      },
+      "required": [
+        "src",
+        "alt",
+        "width",
+        "height"
+      ],
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvVHJ1c3RlZEJ5LnRzeA==@Image[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvVHJ1c3RlZEJ5LnRzeA==@Image"
+      },
+      "title": "Image[]"
+    },
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvVHJ1c3RlZEJ5LnRzeA==@props": {
       "type": "object",
       "properties": {
@@ -7783,10 +7844,7 @@
           "title": "Title"
         },
         "trustedByImg": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvVHJ1c3RlZEJ5LnRzeA==@Image[]",
           "title": "Trusted By Img"
         }
       },

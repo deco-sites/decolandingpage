@@ -14,7 +14,7 @@ export default function Footer(
         className={"flex items-center flex-col justify-center w-[90%] mx-auto"}
       >
         <h2
-          className={"text-[#f3fff9] font-[600] text-[32px] mt-[44px] mb-[12px] lg:text-[80px] lg:mt-[120px] lg:mb-[24px] lg:max-w-[1000px] text-center"}
+          className={"text-[#f3fff9] font-[600] text-[32px] mt-[44px] mb-[12px] lg:text-[80px] lg:mt-[120px] lg:mb-[24px] lg:max-w-[1000px] text-center lg:leading-[82px] leading-[35px]"}
           dangerouslySetInnerHTML={{ __html: footerTitle }}
         >
         </h2>

@@ -23,7 +23,7 @@ export default function Header(
         </p>
       </div>
       <div
-        className={"flex flex-col  mx-auto w-[90%] lg:max-w-[900px]"}
+        className={"flex flex-col  mx-auto w-[90%] lg:max-w-[900px] items-center"}
       >
         <h1
           className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] w-[367px] lg:w-[840px] leading-[35px] lg:leading-[80px]"}
@@ -31,7 +31,8 @@ export default function Header(
         >
         </h1>
         <p
-          className={"text-white text-[20px] lg:text-[24px] w-[327px] lg:w-[790px]"}
+          id={"Description"}
+          className={"text-white text-[20px] lg:text-[24px] w-[372px] lg:w-[790px] leading-[30px] lg:leading-[35px]"}
           dangerouslySetInnerHTML={{ __html: description }}
         >
         </p>

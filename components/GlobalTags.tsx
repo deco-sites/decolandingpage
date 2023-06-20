@@ -53,29 +53,18 @@ function GlobalTags() {
           font-weight: 600;
         }
 
-        #TitleCards strong {
+        #TitleCards strong, #Footer strong, #TrustedBy strong, #MadeBy strong {
+          font-weight: 600;
           color: #02F67C;
         }
 
-        #Footer strong {
-          color: #02F67C;
-        }
-
-        #Invite strong {
+        #Invite strong, #Description strong {
           font-weight: 700;
         }
 
         #InviteText a {
           text-decoration: underline;
           color: #0A2121
-        }
-
-        #TrustedBy strong {
-          color: #02F67C;
-        }
-
-        #MadeBy strong {
-          color: #02F67C;
         }
 
         html {

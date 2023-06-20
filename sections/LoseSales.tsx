@@ -14,7 +14,7 @@ export default function LoseSales({ principalText, description }: props) {
     >
       <div className={"flex items-center flex-col  mx-auto w-[90%]"}>
         <h2
-          className={"text-white text-[32px] mb-[20px] lg:mb-[40px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[154px]"}
+          className={"text-white text-[32px] mb-[20px] lg:mb-[40px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[154px] leading-[38px] lg:leading-[77px]"}
         >
           {principalText}
         </h2>

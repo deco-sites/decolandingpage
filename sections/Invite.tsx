@@ -14,13 +14,13 @@ export default function Invite(
         className={"flex items-center flex-col justify-center w-[90%] mx-auto"}
       >
         <h2
-          className={" text-[32px] mb-[24px] font-semibold lg:text-[73px] text-center mt-[40px] lg:mt-[80px] text-[#0A2121] lg:mb-[40px]"}
+          className={" text-[32px] mb-[24px] font-semibold lg:text-[73px] text-center mt-[40px] lg:mt-[80px] text-[#0A2121] lg:mb-[40px] lg:leading-[77px] leading-[38px]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
         <p
           id="InviteText"
-          className={"text-center text-[20px] text-[#0A2121] font-[400] lg:max-w-[909px] lg:text-[28px]"}
+          className={"text-center text-[20px] text-[#0A2121] font-[400] lg:max-w-[909px] lg:text-[28px] leading-[28px] lg:leading-[40px]"}
           dangerouslySetInnerHTML={{ __html: inviteText }}
         >
         </p>

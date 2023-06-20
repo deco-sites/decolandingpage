@@ -1,13 +1,21 @@
 import { context } from "$live/live.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface props {
   text: string;
   devsCircle: {
-    image?: string;
+    image: Image;
     name: string;
     link: string;
   }[];
+}
+
+export interface Image {
+  src: LiveImage;
+  alt: string;
+  width: number;
+  height: number;
 }
 
 export default function MadeBy({ text, devsCircle }: props) {
@@ -15,7 +23,7 @@ export default function MadeBy({ text, devsCircle }: props) {
     <div id="MadeBy">
       <div className={"flex items-center flex-col"}>
         <h2
-          className={"text-white text-[32px] mb-[50px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[100px] lg:mb-[100px] flex-col flex"}
+          className={"text-white text-[32px] mb-[50px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[100px] lg:mb-[100px] flex-col flex lg:leading-[77px] leading-[38px]"}
           dangerouslySetInnerHTML={{ __html: text }}
         >
         </h2>
@@ -33,10 +41,12 @@ export default function MadeBy({ text, devsCircle }: props) {
               className={"flex flex-col items-center justify-center m-[20px] min-h-[144px]"}
             >
               <a href={dev.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={dev.image}
-                  alt={dev.name}
-                  className={"w-[76px] min-w-[76px] h-[76px] rounded-full lg:min-w-[95px] lg:min-h-[95px] lg:w-[95px]"}
+                <Image
+                  src={dev.image.src}
+                  alt={dev.image.alt}
+                  className={"rounded-full min-w-[98px]"}
+                  width={dev.image.width}
+                  height={dev.image.height}
                 />
               </a>
               <p
