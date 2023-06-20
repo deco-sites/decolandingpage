@@ -12,7 +12,7 @@ export default function Header(
   return (
     <header
       id="Header"
-      className={'bg-[url("/image_3.png")] bg-no-repeat min-h-[936px] bg-[center_right_-19rem] lg:bg-cover lg:bg-top lg:bg-[unset] lg:h-[1124px]'}
+      className={'bg-[url("/image_3.webp")] bg-no-repeat min-h-[936px] bg-[center_right_-19rem] lg:bg-cover lg:bg-top lg:bg-[unset] lg:h-[1124px]'}
     >
       <div className={"flex items-center flex-col gap-[21px] pt-[134px]"}>
         <svg class="h-[46px]">
