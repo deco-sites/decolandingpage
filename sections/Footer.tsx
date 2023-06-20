@@ -11,7 +11,17 @@ export interface props {
 }
 
 export default function Footer(
-  { footerTitle, descriptionTitle, imageDescription, seedText, linkLinkedin, linkGithub, linkInstagram, linkDiscord, linkWhatsapp }: props,
+  {
+    footerTitle,
+    descriptionTitle,
+    imageDescription,
+    seedText,
+    linkLinkedin,
+    linkGithub,
+    linkInstagram,
+    linkDiscord,
+    linkWhatsapp,
+  }: props,
 ) {
   return (
     <div id="Footer">
