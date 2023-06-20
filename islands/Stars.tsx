@@ -1,4 +1,4 @@
-import gsap from "npm:gsap";
+import gsap from "https://esm.sh/gsap@3.12.1?target=es2022";
 import { useEffect } from "preact/hooks";
 
 const Stars = () => {
