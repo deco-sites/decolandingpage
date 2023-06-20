@@ -57,6 +57,27 @@ function GlobalTags() {
           color: #02F67C;
         }
 
+        #Footer strong {
+          color: #02F67C;
+        }
+
+        #Invite strong {
+          font-weight: 700;
+        }
+
+        #InviteText a {
+          text-decoration: underline;
+          color: #0A2121
+        }
+
+        #TrustedBy strong {
+          color: #02F67C;
+        }
+
+        #MadeBy strong {
+          color: #02F67C;
+        }
+
         html {
             height: 100%;
             display: grid;

@@ -9,7 +9,7 @@ export default function Invite(
   { title, inviteText, buttonLink, buttonText }: props,
 ) {
   return (
-    <div className={"bg-[#06E474]"}>
+    <div id="Invite" className={"bg-[#06E474]"}>
       <div
         className={"flex items-center flex-col justify-center w-[90%] mx-auto"}
       >
@@ -19,6 +19,7 @@ export default function Invite(
         >
         </h2>
         <p
+          id="InviteText"
           className={"text-center text-[20px] text-[#0A2121] font-[400] lg:max-w-[909px] lg:text-[28px]"}
           dangerouslySetInnerHTML={{ __html: inviteText }}
         >

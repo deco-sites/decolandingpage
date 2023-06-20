@@ -9,7 +9,7 @@ export default function Footer(
   { footerTitle, descriptionTitle, imageDescription, seedText }: props,
 ) {
   return (
-    <div id="footer">
+    <div id="Footer">
       <div
         className={"flex items-center flex-col justify-center w-[90%] mx-auto"}
       >
