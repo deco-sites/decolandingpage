@@ -7586,13 +7586,38 @@
         "seedText": {
           "type": "string",
           "title": "Seed Text"
+        },
+        "linkLinkedin": {
+          "type": "string",
+          "title": "Link Linkedin"
+        },
+        "linkGithub": {
+          "type": "string",
+          "title": "Link Github"
+        },
+        "linkInstagram": {
+          "type": "string",
+          "title": "Link Instagram"
+        },
+        "linkDiscord": {
+          "type": "string",
+          "title": "Link Discord"
+        },
+        "linkWhatsapp": {
+          "type": "string",
+          "title": "Link Whatsapp"
         }
       },
       "required": [
         "footerTitle",
         "descriptionTitle",
         "imageDescription",
-        "seedText"
+        "seedText",
+        "linkLinkedin",
+        "linkGithub",
+        "linkInstagram",
+        "linkDiscord",
+        "linkWhatsapp"
       ],
       "title": "deco-sites/decolandingpage/sections/Footer.tsx@props"
     },

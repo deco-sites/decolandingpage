@@ -3,10 +3,15 @@ export interface props {
   descriptionTitle: string;
   imageDescription: string;
   seedText: string;
+  linkLinkedin?: string;
+  linkGithub?: string;
+  linkInstagram?: string;
+  linkDiscord?: string;
+  linkWhatsapp?: string;
 }
 
 export default function Footer(
-  { footerTitle, descriptionTitle, imageDescription, seedText }: props,
+  { footerTitle, descriptionTitle, imageDescription, seedText, linkLinkedin, linkGithub, linkInstagram, linkDiscord, linkWhatsapp }: props,
 ) {
   return (
     <div id="Footer">
@@ -36,21 +41,31 @@ export default function Footer(
         <div
           className={"flex flex-row justify-center mb-[10px] lg:mb-[14px] gap-[20px]"}
         >
-          <svg className={"w-[20px] h-[20px]"}>
-            <use href="/symbols.svg#linkedinIcon" />
-          </svg>
-          <svg className={"w-[20px] h-[20px]"}>
-            <use href="/symbols.svg#githubIcon" />
-          </svg>
-          <svg className={"w-[20px] h-[20px]"}>
-            <use href="/symbols.svg#instagramIcon" />
-          </svg>
-          <svg className={"w-[20px] h-[20px]"}>
-            <use href="/symbols.svg#discordIcon" />
-          </svg>
-          <svg className={"w-[20px] h-[20px]"}>
-            <use href="/symbols.svg#whatsappIcon" />
-          </svg>
+          <a href={linkLinkedin}>
+            <svg className={"w-[20px] h-[20px]"}>
+              <use href="/symbols.svg#linkedinIcon" />
+            </svg>
+          </a>
+          <a href={linkGithub}>
+            <svg className={"w-[20px] h-[20px]"}>
+              <use href="/symbols.svg#githubIcon" />
+            </svg>
+          </a>
+          <a href={linkInstagram}>
+            <svg className={"w-[20px] h-[20px]"}>
+              <use href="/symbols.svg#instagramIcon" />
+            </svg>
+          </a>
+          <a href={linkDiscord}>
+            <svg className={"w-[20px] h-[20px]"}>
+              <use href="/symbols.svg#discordIcon" />
+            </svg>
+          </a>
+          <a href={linkWhatsapp}>
+            <svg className={"w-[20px] h-[20px]"}>
+              <use href="/symbols.svg#whatsappIcon" />
+            </svg>
+          </a>
         </div>
         <p
           className={"text-[16px] text-[#f3fff9] font-[400] text-center mb-[40px] lg:mb-[64px]"}

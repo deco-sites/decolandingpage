@@ -14,7 +14,7 @@ export default function Header(
       id="Header"
       className={'bg-[url("/image_3.webp")] bg-no-repeat min-h-[936px] bg-[center_right_-19rem] lg:bg-cover lg:bg-top lg:bg-[unset] lg:h-[1124px]'}
     >
-      <div className={"flex items-center flex-col gap-[21px] pt-[134px]"}>
+      <div className={"flex items-center flex-col gap-[21px] pt-[89px] lg:pt-[143px]"}>
         <svg class="h-[46px]">
           <use href="/icons.svg#Logo" />
         </svg>
@@ -23,7 +23,7 @@ export default function Header(
         </p>
       </div>
       <div
-        className={"flex flex-col  mx-auto w-[90%] lg:max-w-[900px] items-center"}
+        className={"flex flex-col  mx-auto w-[90%] lg:max-w-[900px] items-center lg:items-start"}
       >
         <h1
           className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] w-[367px] lg:w-[840px] leading-[35px] lg:leading-[80px]"}

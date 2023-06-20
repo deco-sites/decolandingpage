@@ -28,7 +28,7 @@ export default function Invite(
           href={buttonLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={"flex items-center justify-center text-[20px] font-[500] px-[46px] py-[24px] text-[#f3fff9] bg-[#0A2121] rounded-[8px] my-[40px] lg:text-[48px] lg:font-[400] lg:px-[64px] lg:py-[40px]"}
+          className={"flex items-center justify-center text-[20px] font-[500] px-[46px] py-[24px] text-[#f3fff9] bg-[#0A2121] rounded-[8px] my-[40px] lg:text-[48px] lg:font-[400] lg:px-[64px] lg:py-[30px] lg:mt-[76px] lg:mb-[80px]"}
         >
           {buttonText}
         </a>

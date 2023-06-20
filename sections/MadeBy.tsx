@@ -33,12 +33,12 @@ export default function MadeBy({ text, devsCircle }: props) {
         className={"flex flex-col items-center justify-center w-[100vw] lg:w-[auto] overflow-auto"}
       >
         <div
-          className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center lg:gap-x-[100px] gap-y-[20px] mb-[45px] lg:mb-[120px]"}
+          className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center gap-y-[20px] mb-[45px] lg:mb-[120px]"}
         >
           {devsCircle.map((dev, index) => (
             <div
               key={index}
-              className={"flex flex-col items-center justify-center m-[20px] min-h-[144px]"}
+              className={"flex flex-col items-center justify-center px-[50px] min-h-[144px]"}
             >
               <a href={dev.link} target="_blank" rel="noopener noreferrer">
                 <Image

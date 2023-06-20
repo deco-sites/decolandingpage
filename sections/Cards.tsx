@@ -25,13 +25,13 @@ export default function Card({ textUnder, card }: Props) {
           id={"TitleCards"}
           className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%] leading-[38px] lg:leading-[77px] gap-[20px] lg:gap-0"}
         >
-          <svg class="h-[46px] w-[156px]">
+          <svg class="h-[40px] w-[88px] lg:h-[46px] lg:w-[156px]">
             <use href="/icons.svg#Logo" />
           </svg>
           <strong>is the platform of choice for</strong>
         </p>
         <p
-          className={"text-[#F3FFF9] text-[32px] mb-[60px] lg:mb-[90px] max-w-[80%] flex text-center flex-col lg:text-[64px]"}
+          className={"text-[#F3FFF9] text-[32px] mb-[60px] lg:mb-[90px] max-w-[80%] flex text-center flex-col lg:text-[64px] font-[600]"}
         >
           next generation digital experiences
         </p>
@@ -41,7 +41,7 @@ export default function Card({ textUnder, card }: Props) {
       >
         {card.map((item, index) => (
           <div
-            className={"flex flex-col mb-[40px] bg-[#ffffff17] w-[90%] py-[20px] rounded-[12px] lg:items-center lg:w-[fit-content] lg:px-[20px]"}
+            className={"flex flex-col mb-[40px] bg-[#ffffff17] w-[90%] py-[32px] px-[12px] rounded-[12px] lg:items-center lg:w-[fit-content] lg:px-[20px]"}
             key={index}
           >
             <div className={"flex flex-col items-center lg:items-center"}>
@@ -58,7 +58,7 @@ export default function Card({ textUnder, card }: Props) {
                 {item.title}
               </h2>
               <p
-                className={"text-white max-w-[284px] text-[20px] lg:text-[24px] text-center lg:max-w-[274px] lg:min-h-[144px]"}
+                className={"text-white max-w-[284px] text-[20px] lg:text-[24px] text-center lg:max-w-[275px] lg:min-h-[144px]"}
                 dangerouslySetInnerHTML={{ __html: item.description }}
               >
               </p>
