@@ -19,11 +19,11 @@ export default function LoseSales({ principalText, description }: props) {
           {principalText}
         </h2>
         <div
-          className={"text-center flex flex-col lg:flex-row lg:flex lg:mb-[165px] gap-[60px]"}
+          className={"text-center flex flex-col lg:flex-row lg:flex lg:mb-[165px] gap-y-[36px] mb-[40px]"}
         >
           {description.map((item, index) => (
             <p
-              className={"text-[#F3FFF9] text-[22px] text-center mb-[40px] lg:text-[40px] max-w-[300px]"}
+              className={"text-[#F3FFF9] text-[22px] text-center lg:text-[40px] max-w-[300px]"}
               key={index}
             >
               {item}
