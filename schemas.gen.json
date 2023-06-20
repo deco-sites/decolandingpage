@@ -7538,13 +7538,28 @@
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvRm9vdGVyLnRzeA==@props": {
       "type": "object",
       "properties": {
-        "spaceText": {
+        "footerTitle": {
           "type": "string",
-          "title": "Space Text"
+          "title": "Footer Title"
+        },
+        "descriptionTitle": {
+          "type": "string",
+          "title": "Description Title"
+        },
+        "imageDescription": {
+          "type": "string",
+          "title": "Image Description"
+        },
+        "seedText": {
+          "type": "string",
+          "title": "Seed Text"
         }
       },
       "required": [
-        "spaceText"
+        "footerTitle",
+        "descriptionTitle",
+        "imageDescription",
+        "seedText"
       ],
       "title": "deco-sites/decolandingpage/sections/Footer.tsx@props"
     },
@@ -7626,13 +7641,28 @@
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSW52aXRlLnRzeA==@props": {
       "type": "object",
       "properties": {
-        "spaceText": {
+        "title": {
           "type": "string",
-          "title": "Space Text"
+          "title": "Title"
+        },
+        "inviteText": {
+          "type": "string",
+          "title": "Invite Text"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonLink": {
+          "type": "string",
+          "title": "Button Link"
         }
       },
       "required": [
-        "spaceText"
+        "title",
+        "inviteText",
+        "buttonText",
+        "buttonLink"
       ],
       "title": "deco-sites/decolandingpage/sections/Invite.tsx@props"
     },
@@ -7713,13 +7743,21 @@
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvVHJ1c3RlZEJ5LnRzeA==@props": {
       "type": "object",
       "properties": {
-        "spaceText": {
+        "title": {
           "type": "string",
-          "title": "Space Text"
+          "title": "Title"
+        },
+        "trustedByImg": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Trusted By Img"
         }
       },
       "required": [
-        "spaceText"
+        "title",
+        "trustedByImg"
       ],
       "title": "deco-sites/decolandingpage/sections/TrustedBy.tsx@props"
     },
