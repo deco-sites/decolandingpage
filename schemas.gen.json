@@ -7173,7 +7173,40 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvQ2FyZHMudHN4@props": {
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvQ2FyZHMudHN4@Image": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Src"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        }
+      },
+      "required": [
+        "src",
+        "alt",
+        "width",
+        "height"
+      ],
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvQ2FyZHMudHN4@Props": {
       "type": "object",
       "properties": {
         "textUnder": {
@@ -7186,7 +7219,7 @@
             "type": "object",
             "properties": {
               "image": {
-                "type": "string",
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvQ2FyZHMudHN4@Image",
                 "title": "Image"
               },
               "title": {
@@ -7211,7 +7244,7 @@
         "textUnder",
         "card"
       ],
-      "title": "deco-sites/decolandingpage/sections/Cards.tsx@props"
+      "title": "deco-sites/decolandingpage/sections/Cards.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors": {
       "type": "object",
@@ -7852,11 +7885,6 @@
         "defaultLocale"
       ],
       "title": "deco-sites/std/commerce/butterCMS/client.ts@ConfigButterCMS"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductDetailsPage|null|ProductListingPage|null": {
       "anyOf": [
@@ -10106,7 +10134,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvQ2FyZHMudHN4@props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvQ2FyZHMudHN4@Props"
         }
       ],
       "required": [

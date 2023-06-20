@@ -1,13 +1,23 @@
-export interface props {
+import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
+export interface Props {
   textUnder: string;
   card: {
-    image: string;
+    image: Image;
     title: string;
     description: string;
   }[];
 }
 
-export default function Card({ textUnder, card }: props) {
+export interface Image {
+  src: LiveImage,
+  alt: string,
+  width: number,
+  height: number,
+}
+
+export default function Card({ textUnder, card }: Props) {
   return (
     <div id="Cards">
       <div className={"flex items-center flex-col w-[90%] mx-auto"}>
@@ -35,10 +45,12 @@ export default function Card({ textUnder, card }: props) {
             key={index}
           >
             <div className={"flex flex-col items-center lg:items-center"}>
-              <img
-                src={item.image}
-                alt=""
+              <Image
+                src={item.image.src}
+                alt={item.image.alt}
                 className={"mb-[20px] lg:mb-[40px] lg:w-[309px]"}
+                width={item.image.width}
+                height={item.image.height}
               />
               <h2
                 className={"text-white text-[32px] mb-[20px] font-semibold lg:text-[43px]"}
