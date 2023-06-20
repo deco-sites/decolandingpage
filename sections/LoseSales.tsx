@@ -3,7 +3,7 @@ export interface props {
   description: string[];
 }
 
-export default function Header({ principalText, description }: props) {
+export default function LoseSales({ principalText, description }: props) {
   return (
     <div
       style={{
