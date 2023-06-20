@@ -14,7 +14,6 @@ export interface Image {
   height: number;
 }
 
-
 export default function TrustedBy({ title, trustedByImg }: props) {
   return (
     <div id="TrustedBy">
