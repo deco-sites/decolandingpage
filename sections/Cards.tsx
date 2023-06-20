@@ -11,7 +11,10 @@ export default function Card({ textUnder, card }: props) {
   return (
     <div id="Cards">
       <div className={"flex items-center flex-col w-[90%] mx-auto"}>
-        <p id={"TitleCards"} className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%]"}>
+        <p
+          id={"TitleCards"}
+          className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%]"}
+        >
           <svg class="h-[46px] w-[156px]">
             <use href="/icons.svg#Logo" />
           </svg>
