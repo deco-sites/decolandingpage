@@ -1,6 +1,4 @@
 import { asset } from "$fresh/runtime.ts";
-import Image from "deco-sites/std/components/Image.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface props {
   imageDescription: string;
