@@ -1,6 +1,12 @@
+import { context } from "$live/live.ts";
+import Image from "deco-sites/std/components/Image.tsx";
+
 export interface props {
   title: string;
-  trustedByImg: string[];
+  trustedByImg: {
+    image: string;
+    width: number;
+  }[];
 }
 
 export default function TrustedBy({ title, trustedByImg }: props) {
@@ -18,11 +24,7 @@ export default function TrustedBy({ title, trustedByImg }: props) {
           className={"flex flex-row justify-center gap-x-[40px] gap-y-[30px] flex-wrap lg:gap-x-[88px] lg:gap-y-[60px]"}
         >
           {trustedByImg.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              className={"w-[69px] h-[24px] lg:w-[92px] lg:h-[32px]"}
-            />
+            <Image width={img.width} key={index} src={img.image} />
           ))}
         </div>
       </div>

@@ -7750,7 +7750,21 @@
         "trustedByImg": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "title": "Image"
+              },
+              "width": {
+                "type": "number",
+                "title": "Width"
+              }
+            },
+            "required": [
+              "image",
+              "width"
+            ]
           },
           "title": "Trusted By Img"
         }

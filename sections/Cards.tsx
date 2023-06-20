@@ -10,15 +10,17 @@ export interface props {
 export default function Card({ textUnder, card }: props) {
   return (
     <div id="Cards">
-      <div className={"flex items-center flex-col"}>
-        <svg class="h-[46px]">
-          <use href="/icons.svg#Logo" />
-        </svg>
+      <div className={"flex items-center flex-col w-[90%] mx-auto"}>
+        <p id={"TitleCards"} className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%]"}>
+          <svg class="h-[46px] w-[156px]">
+            <use href="/icons.svg#Logo" />
+          </svg>
+          <strong>is the platform of choice for</strong>
+        </p>
         <p
           className={"text-[#F3FFF9] text-[32px] mb-[60px] lg:mb-[90px] max-w-[80%] flex text-center flex-col lg:text-[64px]"}
-          dangerouslySetInnerHTML={{ __html: textUnder }}
-          id={"TitleCards"}
         >
+          next generation digital experiences
         </p>
       </div>
       <div

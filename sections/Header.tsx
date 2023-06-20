@@ -23,15 +23,15 @@ export default function Header(
         </p>
       </div>
       <div
-        className={"flex items-center flex-col  mx-auto w-[90%] lg:max-w-[900px]"}
+        className={"flex flex-col  mx-auto w-[90%] lg:max-w-[900px]"}
       >
         <h1
-          className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] leading-[81px]"}
+          className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] w-[367px] lg:w-[840px]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h1>
         <p
-          className={"text-white text-[18px] lg:text-[24px]"}
+          className={"text-white text-[20px] lg:text-[24px] w-[327px] lg:w-[790px]"}
           dangerouslySetInnerHTML={{ __html: description }}
         >
         </p>
