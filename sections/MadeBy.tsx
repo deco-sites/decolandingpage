@@ -12,7 +12,7 @@ export default function MadeBy({ text, devsCircle }: props) {
     <div>
       <div className={"flex items-center flex-col"} id="space">
         <h2
-          className={"text-white text-[32px] mb-[50px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[100px] lg:mb-[100px]"}
+          className={"text-white text-[32px] mb-[50px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[100px] lg:mb-[100px] flex-col flex"}
           dangerouslySetInnerHTML={{ __html: text }}
         >
         </h2>
