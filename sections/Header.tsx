@@ -13,12 +13,10 @@ export default function Header(
     <header
       className={'bg-[url("/image_3.png")] bg-no-repeat min-h-[936px] bg-[center_right_-19rem] lg:bg-cover lg:bg-top lg:bg-[unset] lg:h-[1124px]'}
     >
-      <div className={"flex items-center flex-col gap-[20px]"}>
-        <img
-          src="/deco-logo-text.png"
-          alt=""
-          className={"w-[132px] mt-[100px]"}
-        />
+      <div className={"flex items-center flex-col gap-[21px] pt-[134px]"}>
+        <svg class="h-[46px]">
+          <use href="/icons.svg#Logo" />
+        </svg>
         <p className={"text-[#F3FFF9] text-[20px] mb-[60px] lg:mb-[90px]"}>
           {imageDescription}
         </p>
