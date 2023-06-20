@@ -25,7 +25,7 @@ export default function TrustedBy({ title, trustedByImg }: props) {
               key={index}
               src={img}
               alt=""
-              className={"w-[69px] h-[24px] lg:w-[92px] lg:h-[32px]"}
+              className={"w-[69px] h-[24px] lg:w-[92px] lg:h-[32px] grayscale opacity-40"}
             />
           ))}
         </div>

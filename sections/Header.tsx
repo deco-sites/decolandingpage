@@ -26,7 +26,7 @@ export default function Header(
         className={"flex flex-col  mx-auto w-[90%] lg:max-w-[900px]"}
       >
         <h1
-          className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] w-[367px] lg:w-[840px]"}
+          className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] w-[367px] lg:w-[840px] leading-[35px] lg:leading-[80px]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h1>
