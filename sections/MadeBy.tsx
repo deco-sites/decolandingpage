@@ -4,7 +4,7 @@ import Image from "deco-sites/std/components/Image.tsx";
 export interface props {
   text: string;
   devsCircle: {
-    image: string;
+    image?: string;
     name: string;
     link: string;
   }[];
@@ -30,7 +30,7 @@ export default function MadeBy({ text, devsCircle }: props) {
           {devsCircle.map((dev, index) => (
             <div
               key={index}
-              className={"flex flex-col items-center justify-center m-[20px]"}
+              className={"flex flex-col items-center justify-center m-[20px] min-h-[144px]"}
             >
               <a href={dev.link} target="_blank" rel="noopener noreferrer">
                 <img
@@ -39,7 +39,7 @@ export default function MadeBy({ text, devsCircle }: props) {
                   className={"w-[76px] min-w-[76px] h-[76px] rounded-full lg:min-w-[95px] lg:min-h-[95px] lg:w-[95px]"}
                 />
               </a>
-              <p className={"text-white text-[16px] font-[400] mt-[20px]"}>
+              <p className={"text-white text-[16px] font-[400] mt-[20px] min-h-[48px]"}>
                 {dev.name}
               </p>
             </div>

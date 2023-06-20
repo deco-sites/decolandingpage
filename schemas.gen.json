@@ -7700,7 +7700,10 @@
             "type": "object",
             "properties": {
               "image": {
-                "type": "string",
+                "type": [
+                  "string",
+                  "null"
+                ],
                 "title": "Image"
               },
               "name": {
@@ -7713,7 +7716,6 @@
               }
             },
             "required": [
-              "image",
               "name",
               "link"
             ]
@@ -7750,21 +7752,7 @@
         "trustedByImg": {
           "type": "array",
           "items": {
-            "type": "object",
-            "properties": {
-              "image": {
-                "type": "string",
-                "title": "Image"
-              },
-              "width": {
-                "type": "number",
-                "title": "Width"
-              }
-            },
-            "required": [
-              "image",
-              "width"
-            ]
+            "type": "string"
           },
           "title": "Trusted By Img"
         }
