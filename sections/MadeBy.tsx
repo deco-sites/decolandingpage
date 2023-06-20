@@ -39,7 +39,9 @@ export default function MadeBy({ text, devsCircle }: props) {
                   className={"w-[76px] min-w-[76px] h-[76px] rounded-full lg:min-w-[95px] lg:min-h-[95px] lg:w-[95px]"}
                 />
               </a>
-              <p className={"text-white text-[16px] font-[400] mt-[20px] min-h-[48px]"}>
+              <p
+                className={"text-white text-[16px] font-[400] mt-[20px] min-h-[48px]"}
+              >
                 {dev.name}
               </p>
             </div>
