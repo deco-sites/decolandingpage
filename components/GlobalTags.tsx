@@ -46,7 +46,6 @@ function GlobalTags() {
         body {
           font-family: 'Albert Sans', sans-serif;
           background: #0A2121;
-          overflow-x: hidden;
         }
 
         h1 strong {
