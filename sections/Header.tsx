@@ -17,7 +17,7 @@ export default function Header(
         <svg class="h-[46px]">
           <use href="/icons.svg#Logo" />
         </svg>
-        <p className={"text-[#F3FFF9] text-[20px] mb-[60px] lg:mb-[90px]"}>
+        <p className={"text-[#F3FFF9] text-[20px] mb-[60px] lg:mb-[108px]"}>
           {imageDescription}
         </p>
       </div>
@@ -25,7 +25,7 @@ export default function Header(
         className={"flex items-center flex-col  mx-auto w-[90%] lg:max-w-[900px]"}
       >
         <h1
-          className={"text-white text-[32px] mb-[20px] font-semibold lg:text-[73px]"}
+          className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] leading-[81px]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h1>

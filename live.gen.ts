@@ -7,18 +7,18 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/Stars.tsx";
 import * as $$$$$$$$0 from "./sections/Cards.tsx";
 import * as $$$$$$$$1 from "./sections/DesignSystem.tsx";
 import * as $$$$$$$$2 from "./sections/Footer.tsx";
 import * as $$$$$$$$3 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$4 from "./sections/GlobalTags.tsx";
-import * as $$$$$$$$5 from "./sections/Head.tsx";
-import * as $$$$$$$$6 from "./sections/Header.tsx";
-import * as $$$$$$$$7 from "./sections/Invite.tsx";
-import * as $$$$$$$$8 from "./sections/LoseSales.tsx";
-import * as $$$$$$$$9 from "./sections/MadeBy.tsx";
-import * as $$$$$$$$10 from "./sections/Space.tsx";
-import * as $$$$$$$$11 from "./sections/TrustedBy.tsx";
+import * as $$$$$$$$4 from "./sections/Head.tsx";
+import * as $$$$$$$$5 from "./sections/Header.tsx";
+import * as $$$$$$$$6 from "./sections/Invite.tsx";
+import * as $$$$$$$$7 from "./sections/LoseSales.tsx";
+import * as $$$$$$$$8 from "./sections/MadeBy.tsx";
+import * as $$$$$$$$9 from "./sections/Space.tsx";
+import * as $$$$$$$$10 from "./sections/TrustedBy.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -179,6 +179,9 @@ const manifest = {
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/styles.css.ts": $$$$0,
   },
+  "islands": {
+    "./islands/Stars.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
@@ -187,14 +190,13 @@ const manifest = {
     "deco-sites/decolandingpage/sections/DesignSystem.tsx": $$$$$$$$1,
     "deco-sites/decolandingpage/sections/Footer.tsx": $$$$$$$$2,
     "deco-sites/decolandingpage/sections/GetStarted.tsx": $$$$$$$$3,
-    "deco-sites/decolandingpage/sections/GlobalTags.tsx": $$$$$$$$4,
-    "deco-sites/decolandingpage/sections/Head.tsx": $$$$$$$$5,
-    "deco-sites/decolandingpage/sections/Header.tsx": $$$$$$$$6,
-    "deco-sites/decolandingpage/sections/Invite.tsx": $$$$$$$$7,
-    "deco-sites/decolandingpage/sections/LoseSales.tsx": $$$$$$$$8,
-    "deco-sites/decolandingpage/sections/MadeBy.tsx": $$$$$$$$9,
-    "deco-sites/decolandingpage/sections/Space.tsx": $$$$$$$$10,
-    "deco-sites/decolandingpage/sections/TrustedBy.tsx": $$$$$$$$11,
+    "deco-sites/decolandingpage/sections/Head.tsx": $$$$$$$$4,
+    "deco-sites/decolandingpage/sections/Header.tsx": $$$$$$$$5,
+    "deco-sites/decolandingpage/sections/Invite.tsx": $$$$$$$$6,
+    "deco-sites/decolandingpage/sections/LoseSales.tsx": $$$$$$$$7,
+    "deco-sites/decolandingpage/sections/MadeBy.tsx": $$$$$$$$8,
+    "deco-sites/decolandingpage/sections/Space.tsx": $$$$$$$$9,
+    "deco-sites/decolandingpage/sections/TrustedBy.tsx": $$$$$$$$10,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
@@ -283,7 +285,6 @@ const manifest = {
     "deco-sites/std/accounts/vtex.ts": i2$$3,
     "deco-sites/std/accounts/yourViews.ts": i2$$4,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };

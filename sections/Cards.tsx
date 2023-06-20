@@ -11,14 +11,13 @@ export default function Card({ textUnder, card }: props) {
   return (
     <div>
       <div className={"flex items-center flex-col"}>
-        <img
-          src="/deco-logo-text.png"
-          alt=""
-          className={"w-[84px] mt-[100px] h-[30px] mb-[30px] lg:w-[134px] lg:h-[54px]"}
-        />
+        <svg class="h-[46px]">
+          <use href="/icons.svg#Logo" />
+        </svg>
         <p
           className={"text-[#F3FFF9] text-[32px] mb-[60px] lg:mb-[90px] max-w-[80%] flex text-center flex-col lg:text-[64px]"}
           dangerouslySetInnerHTML={{ __html: textUnder }}
+          id={"TitleCards"}
         >
         </p>
       </div>
