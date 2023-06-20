@@ -9,7 +9,7 @@ export interface props {
 
 export default function Card({ textUnder, card }: props) {
   return (
-    <div>
+    <div id="Cards">
       <div className={"flex items-center flex-col"}>
         <svg class="h-[46px]">
           <use href="/icons.svg#Logo" />

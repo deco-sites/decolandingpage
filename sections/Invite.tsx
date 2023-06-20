@@ -1,16 +1,37 @@
 export interface props {
-  spaceText: string;
+  title: string;
+  inviteText: string;
+  buttonText: string;
+  buttonLink: string;
 }
 
-export default function Space({ spaceText }: props) {
+export default function Invite(
+  { title, inviteText, buttonLink, buttonText }: props,
+) {
   return (
-    <div>
-      <div className={"flex items-center flex-col"} id="space">
+    <div id="Invite" className={"bg-[#06E474]"}>
+      <div
+        className={"flex items-center flex-col justify-center w-[90%] mx-auto"}
+      >
         <h2
-          className={"text-white text-[32px] mb-[50px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[165px] lg:mb-[165px]"}
-          dangerouslySetInnerHTML={{ __html: spaceText }}
+          className={" text-[32px] mb-[24px] font-semibold lg:text-[73px] text-center mt-[40px] lg:mt-[80px] text-[#0A2121] lg:mb-[40px]"}
+          dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
+        <p
+          id="InviteText"
+          className={"text-center text-[20px] text-[#0A2121] font-[400] lg:max-w-[909px] lg:text-[28px]"}
+          dangerouslySetInnerHTML={{ __html: inviteText }}
+        >
+        </p>
+        <a
+          href={buttonLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={"flex items-center justify-center text-[20px] font-[500] px-[46px] py-[24px] text-[#f3fff9] bg-[#0A2121] rounded-[8px] my-[40px] lg:text-[48px] lg:font-[400] lg:px-[64px] lg:py-[40px]"}
+        >
+          {buttonText}
+        </a>
       </div>
     </div>
   );

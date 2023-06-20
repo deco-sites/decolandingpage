@@ -54,10 +54,7 @@ const Stars = () => {
     }
   }, []);
 
-  return (
-    <div>
-    </div>
-  );
+  return (null);
 };
 
 export default Stars;

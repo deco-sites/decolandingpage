@@ -6,6 +6,7 @@ export interface props {
 export default function LoseSales({ principalText, description }: props) {
   return (
     <div
+      id="LoseSales"
       style={{
         "background":
           "linear-gradient(180deg, rgba(94, 61, 232, 0.2) 0%, rgba(247, 25, 99, 0.2) 100%)",
