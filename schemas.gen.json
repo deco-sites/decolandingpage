@@ -61,6 +61,7 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
+              "./islands/Stars.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -76,7 +77,6 @@
               "deco-sites/decolandingpage/sections/DesignSystem.tsx",
               "deco-sites/decolandingpage/sections/Footer.tsx",
               "deco-sites/decolandingpage/sections/GetStarted.tsx",
-              "deco-sites/decolandingpage/sections/GlobalTags.tsx",
               "deco-sites/decolandingpage/sections/Head.tsx",
               "deco-sites/decolandingpage/sections/Header.tsx",
               "deco-sites/decolandingpage/sections/Invite.tsx",
@@ -9848,6 +9848,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1N0YXJzLnRzeA==": {
+      "title": "./islands/Stars.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Stars.tsx"
+          ],
+          "default": "./islands/Stars.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
       "title": "Private Fresh Page",
       "description": "Useful for pages under development.",
@@ -10164,22 +10180,6 @@
             "deco-sites/decolandingpage/sections/GetStarted.tsx"
           ],
           "default": "deco-sites/decolandingpage/sections/GetStarted.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvR2xvYmFsVGFncy50c3g=": {
-      "title": "deco-sites/decolandingpage/sections/GlobalTags.tsx",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/decolandingpage/sections/GlobalTags.tsx"
-          ],
-          "default": "deco-sites/decolandingpage/sections/GlobalTags.tsx"
         }
       }
     },
@@ -11394,7 +11394,14 @@
     },
     "islands": {
       "title": "islands",
-      "anyOf": []
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1N0YXJzLnRzeA=="
+        }
+      ]
     },
     "handlers": {
       "title": "handlers",
@@ -11462,9 +11469,6 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvR2V0U3RhcnRlZC50c3g="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvR2xvYmFsVGFncy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kZWNvbGFuZGluZ3BhZ2Uvc2VjdGlvbnMvSGVhZC50c3g="
