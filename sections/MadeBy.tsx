@@ -18,8 +18,12 @@ export default function MadeBy({ text, devsCircle }: props) {
         </h2>
       </div>
 
-      <div className={"flex flex-col items-center justify-center w-[100vw] lg:w-[auto] overflow-auto"}>
-        <div className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center lg:gap-[80px]"}>
+      <div
+        className={"flex flex-col items-center justify-center w-[100vw] lg:w-[auto] overflow-auto"}
+      >
+        <div
+          className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center lg:gap-[80px]"}
+        >
           {devsCircle.map((dev, index) => (
             <div
               key={index}
