@@ -1,6 +1,5 @@
 import Stars from "../islands/Stars.tsx";
 
-
 export interface props {
   spaceText: string;
 }
