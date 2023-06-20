@@ -11,10 +11,10 @@ export interface Props {
 }
 
 export interface Image {
-  src: LiveImage,
-  alt: string,
-  width: number,
-  height: number,
+  src: LiveImage;
+  alt: string;
+  width: number;
+  height: number;
 }
 
 export default function Card({ textUnder, card }: Props) {
