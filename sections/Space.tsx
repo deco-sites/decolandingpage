@@ -13,7 +13,7 @@ export default function Space({ spaceText }: props) {
         id="space"
       >
         <h2
-          className={"text-white text-[32px] mb-[50px] font-semibold lg:text-[73px] text-center lg:mb-[165px]"}
+          className={"text-white text-[32px] font-semibold lg:text-[73px] text-center  absolute"}
           dangerouslySetInnerHTML={{ __html: spaceText }}
         >
         </h2>

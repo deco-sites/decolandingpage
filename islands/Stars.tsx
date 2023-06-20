@@ -23,7 +23,8 @@ const Stars = () => {
       gsap.set(star, {
         width: `${starWidth}px`,
         height: `${starHeight}px`,
-        backgroundColor: "#F3FFF9",
+        backgroundColor: "#06E474",
+        transformOrigin: "center",
         transform: `
           translateY(${starHeight / 2}px)
           rotate(${randomRotation}deg)
