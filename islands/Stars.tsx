@@ -51,7 +51,7 @@ const Stars = () => {
 
       frag.appendChild(star);
 
-      if (index === MAX_ELEMENTS-1) {
+      if (index === MAX_ELEMENTS - 1) {
         space.appendChild(frag);
       }
     }
@@ -59,8 +59,6 @@ const Stars = () => {
     for (let i = 0; i < MAX_ELEMENTS; i++) {
       setTimeout(makeStar, 0, i);
     }
-
-    
   }, []);
 
   return (null);
