@@ -52,27 +52,27 @@ export default function Footer(
           className={"flex flex-row justify-center mb-[10px] lg:mb-[14px] gap-[20px]"}
         >
           <a href={linkLinkedin}>
-            <svg className={"w-[20px] h-[20px]"}>
+            <svg width="28" height="28">
               <use href="/symbols.svg#linkedinIcon" />
             </svg>
           </a>
           <a href={linkGithub}>
-            <svg className={"w-[20px] h-[20px]"}>
+            <svg width="28" height="28">
               <use href="/symbols.svg#githubIcon" />
             </svg>
           </a>
           <a href={linkInstagram}>
-            <svg className={"w-[20px] h-[20px]"}>
+            <svg width="28" height="28">
               <use href="/symbols.svg#instagramIcon" />
             </svg>
           </a>
           <a href={linkDiscord}>
-            <svg className={"w-[20px] h-[20px]"}>
+            <svg width="28" height="28">
               <use href="/symbols.svg#discordIcon" />
             </svg>
           </a>
           <a href={linkWhatsapp}>
-            <svg className={"w-[20px] h-[20px]"}>
+            <svg width="28" height="28">
               <use href="/symbols.svg#whatsappIcon" />
             </svg>
           </a>
