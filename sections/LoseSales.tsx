@@ -23,7 +23,7 @@ export default function LoseSales({ principalText, bullets }: props) {
         className={"flex items-center flex-col gap-8 lg:gap-16 mx-auto w-[90%] py-10 lg:py-0"}
       >
         <h2
-          className={"text-white text-[32px] mb-[20px] lg:mb-[40px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[154px] leading-[125%]"}
+          className={"text-white text-[32px] mb-[20px] lg:mb-[40px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[154px] lg:leading-[125%] leading-[120%]"}
         >
           {principalText}
         </h2>

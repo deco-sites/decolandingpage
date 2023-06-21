@@ -14,7 +14,7 @@ export default function Invite(
         className={"flex items-center flex-col justify-center w-[90%] mx-auto"}
       >
         <h2
-          className={" text-[32px] mb-[24px] font-semibold lg:text-[73px] text-center mt-[40px] lg:mt-[80px] text-[#0A2121] lg:mb-[40px] lg:leading-[77px] leading-[38px]"}
+          className={" text-[32px] mb-[24px] font-semibold lg:text-[73px] text-center mt-[40px] lg:mt-[80px] text-[#0A2121] lg:mb-[40px] lg:leading-[125%] leading-[120%]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>

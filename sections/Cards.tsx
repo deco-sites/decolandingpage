@@ -23,7 +23,7 @@ export default function Card({ textUnder, card }: Props) {
       <div className={"flex items-center flex-col w-[90%] mx-auto"}>
         <p
           id={"TitleCards"}
-          className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%] leading-[38px] lg:leading-[77px] gap-[20px] lg:gap-0"}
+          className={"flex flex-col lg:flex-row items-center lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%] lg:leading-[125%] leading-[120%] gap-1 lg:gap-[0.2em]"}
         >
           <svg class="h-[40px] w-[88px] lg:h-[46px] lg:w-[156px]">
             <use href="/icons.svg#Logo" />
@@ -31,7 +31,7 @@ export default function Card({ textUnder, card }: Props) {
           <strong>is the platform of choice for</strong>
         </p>
         <p
-          className={"text-[#F3FFF9] text-[32px] mb-[60px] lg:mb-[90px] max-w-[80%] flex text-center flex-col lg:text-[64px] font-[600]"}
+          className={"text-[#F3FFF9] text-[32px] mb-[60px] lg:mb-[90px] max-w-[80%] flex text-center flex-col lg:text-[64px] font-[600] lg:leading-[125%] leading-[120%]"}
         >
           next generation digital experiences
         </p>

@@ -21,7 +21,7 @@ export default function TrustedBy({ title, trustedByImg }: props) {
         className={"flex items-center flex-col mb-[44px] lg:mb-[120px] w-[95%] mx-auto"}
       >
         <h2
-          className={"text-[#f3fff9] font-[600] text-[32px] mb-[40px] lg:text-[64px] lg:mb-[88px] text-center leading-[38px] lg:leading-[77px]"}
+          className={"text-[#f3fff9] font-[600] text-[32px] mb-[40px] lg:text-[64px] lg:mb-[88px] text-center lg:leading-[125%] leading-[120%]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
