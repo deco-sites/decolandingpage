@@ -39,7 +39,7 @@ export default function Footer(
         >
         </p>
         <div className={"flex flex-col items-center"}>
-          <svg className={"w-[80px] h-[28px] mb-[12px] lg:w-[132] lg:h-[45px]"}>
+          <svg className={"w-[80px] h-[28px] mb-[12px] lg:w-[132] lg:h-[32px]"}>
             <use href="/symbols.svg#decoIcon" />
           </svg>
           <p
@@ -51,31 +51,35 @@ export default function Footer(
         <div
           className={"flex flex-row justify-center mb-[10px] lg:mb-[14px] gap-[20px]"}
         >
-          <a href={linkLinkedin}>
+          <a href={linkLinkedin} target="_blank">
             <svg width="28" height="28">
               <use href="/symbols.svg#linkedinIcon" />
             </svg>
           </a>
-          <a href={linkGithub}>
+          <a href={linkGithub} target="_blank">
             <svg width="28" height="28">
               <use href="/symbols.svg#githubIcon" />
             </svg>
           </a>
-          <a href={linkInstagram}>
+          <a href={linkInstagram} target="_blank">
             <svg width="28" height="28">
               <use href="/symbols.svg#instagramIcon" />
             </svg>
           </a>
-          <a href={linkDiscord}>
+          <a href={linkDiscord} target="_blank">
             <svg width="28" height="28">
               <use href="/symbols.svg#discordIcon" />
             </svg>
           </a>
-          <a href={linkWhatsapp}>
-            <svg width="28" height="28">
-              <use href="/symbols.svg#whatsappIcon" />
-            </svg>
-          </a>
+          {
+            linkWhatsapp && (
+              <a href={linkWhatsapp}>
+                <svg width="28" height="28">
+                  <use href="/symbols.svg#whatsappIcon" />
+                </svg>
+              </a>
+            )
+          }
         </div>
         <p
           className={"text-[16px] text-[#f3fff9] font-[400] text-center mb-[40px] lg:mb-[64px]"}
