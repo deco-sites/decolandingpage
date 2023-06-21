@@ -24,10 +24,10 @@ export default function TrustedBy({ title, images }: props) {
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
-        <div class="w-full text-center items-center">
-          {images.map((element) => (
-            <div class="w-36 lg:w-40 h-17 lg:h-20 px-4 lg:px-6 py-6 lg:py-4 inline-block align-middle">
-              <div class="flex w-full h-full items-center justify-center">
+        <div class="w-full flex flex-wrap justify-center gap-8 lg:gap-12">
+          {images?.map((element) => (
+            <div class="w-32 lg:w-40 h-12 lg:h-16">
+              <div class="flex w-full h-full">
                 <Image
                   width={300}
                   height={300}
