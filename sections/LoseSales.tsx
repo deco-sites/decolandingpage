@@ -53,7 +53,7 @@ export default function LoseSales({ principalText, bullets }: props) {
         class="absolute top-0 w-full h-28"
         style={{
           "background":
-            "linear-gradient(180deg, #0B1618 0%, rgba(11, 22, 23, 0) 100%)",
+            "linear-gradient(180deg, #0A2121 0%, rgba(10, 33, 33, 0) 100%)",
         }}
       />
       <div

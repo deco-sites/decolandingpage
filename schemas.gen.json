@@ -7697,12 +7697,17 @@
         "description": {
           "type": "string",
           "title": "Description"
+        },
+        "bgImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Bg Image"
         }
       },
       "required": [
         "imageDescription",
         "title",
-        "description"
+        "description",
+        "bgImage"
       ],
       "title": "deco-sites/decolandingpage/sections/Header.tsx@props"
     },
