@@ -1,8 +1,8 @@
 import gsap from "https://esm.sh/gsap@3.12.1?target=es2022";
-import { useEffect } from "preact/hooks";
+import { useLayoutEffect } from "preact/hooks";
 
 const Stars = () => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const space = document.getElementById(`space`) as HTMLElement,
       spaceWidth = space.scrollWidth,
       spaceHeight = space.scrollHeight,
