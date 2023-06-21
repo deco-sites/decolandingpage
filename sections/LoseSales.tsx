@@ -13,13 +13,14 @@ export default function LoseSales({ principalText, bullets }: props) {
   return (
     <div
       id="LoseSales"
+      class="relative"
       style={{
         "background":
           "linear-gradient(180deg, rgba(94, 61, 232, 0.2) 0%, rgba(247, 25, 99, 0.2) 100%)",
       }}
     >
       <div
-        className={"flex items-center flex-col gap-8 lg:gap-16 mx-auto w-[90%]"}
+        className={"flex items-center flex-col gap-8 lg:gap-16 mx-auto w-[90%] py-10 lg:py-0"}
       >
         <h2
           className={"text-white text-[32px] mb-[20px] lg:mb-[40px] font-semibold lg:text-[73px] text-center mt-[50px] lg:mt-[154px] leading-[125%]"}
@@ -48,6 +49,20 @@ export default function LoseSales({ principalText, bullets }: props) {
           ))}
         </div>
       </div>
+      <div
+        class="absolute top-0 w-full h-28"
+        style={{
+          "background":
+            "linear-gradient(180deg, #0B1618 0%, rgba(11, 22, 23, 0) 100%)",
+        }}
+      />
+      <div
+        class="absolute bottom-0 w-full h-28"
+        style={{
+          "background":
+            "linear-gradient(180deg, rgba(10, 33, 33, 0) 0%, #0A2121 100%)",
+        }}
+      />
     </div>
   );
 }
