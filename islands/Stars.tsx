@@ -11,7 +11,9 @@ const Stars = () => {
 
     space.style.setProperty(`--perspective`, `${perspective}px`);
 
-    function makeStar() {
+    const MAX_ELEMENTS = 200;
+
+    function makeStar(index: number) {
       const star = document.createElement(`time`),
         starWidth = gsap.utils.random(0.7, 1.1, 1),
         starHeight = starWidth * gsap.utils.random(10, 20, 1),
@@ -48,13 +50,16 @@ const Stars = () => {
       }).progress(Math.random());
 
       frag.appendChild(star);
+
+      if (i === MAX_ELEMENTS-1) {space.appendChild(frag);
+}
     }
 
-    for (let i = 0; i < 200; i++) {
-      makeStar();
+    for (let i = 0; i < MAX_ELEMENTS; i++) {
+      setTimeout(makeStar, 0, i);
     }
 
-    space.appendChild(frag);
+    
   }, []);
 
   return (null);
