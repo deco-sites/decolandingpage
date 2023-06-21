@@ -7741,17 +7741,30 @@
           "type": "string",
           "title": "Principal Text"
         },
-        "description": {
+        "bullets": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "icon": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Icon"
+              },
+              "text": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Text"
+              }
+            },
+            "required": []
           },
-          "title": "Description"
+          "title": "Bullets"
         }
       },
       "required": [
-        "principalText",
-        "description"
+        "principalText"
       ],
       "title": "deco-sites/decolandingpage/sections/LoseSales.tsx@props"
     },
