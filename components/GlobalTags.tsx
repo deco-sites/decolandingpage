@@ -47,6 +47,10 @@ function GlobalTags() {
           background: #0A2121;
         }
 
+        #Header {
+          background-image: url(${asset("/image_3.webp")});
+        }
+
         h1 strong {
           color: #02F67C;
           font-weight: 600;

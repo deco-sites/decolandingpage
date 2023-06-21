@@ -7758,7 +7758,9 @@
                 "title": "Text"
               }
             },
-            "required": []
+            "required": [
+              "icon"
+            ]
           },
           "title": "Bullets"
         }
