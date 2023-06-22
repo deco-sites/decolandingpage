@@ -35,3 +35,4 @@ export default function Space({ spaceText }: props) {
     </div>
   );
 }
+
