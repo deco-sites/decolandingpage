@@ -27,7 +27,7 @@ export default function MadeBy({ text, imageSize, devsCircle }: props) {
         className={"flex flex-col items-center justify-center w-[100vw] lg:w-[auto] overflow-auto lg:overflow-visible mb-16 lg:mb-[120px]"}
       >
         <div
-          className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center gap-y-10 mb-4"}
+          className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center gap-y-10 mb-4 max-w-[1440px]"}
         >
           {devsCircle.map((dev, index) => (
             <a key={index} href={dev.linkedin} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center px-4 w-44 gap-4 text-center group">

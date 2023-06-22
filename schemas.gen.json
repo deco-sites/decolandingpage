@@ -7701,6 +7701,13 @@
         "bgImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Bg Image"
+        },
+        "bgOpacity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Bg Opacity"
         }
       },
       "required": [

@@ -24,7 +24,7 @@ export default function TrustedBy({ title, images }: props) {
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
-        <div class="w-full flex flex-wrap justify-center gap-8 lg:gap-12">
+        <div class="w-full flex flex-wrap justify-center gap-8 lg:gap-12 max-w-[1440px]">
           {images?.map((element) => (
             <div class="w-32 lg:w-40 h-12 lg:h-16">
               <div class="flex w-full h-full">

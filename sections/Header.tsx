@@ -5,10 +5,11 @@ export interface props {
   title: string;
   description: string;
   bgImage: LiveImage;
+  bgOpacity?: number;
 }
 
 export default function Header(
-  { title, description, imageDescription, bgImage }: props,
+  { title, description, imageDescription, bgImage, bgOpacity }: props,
 ) {
   return (
     <header class="relative min-h-[936px] lg:h-[1124px]">
@@ -16,6 +17,7 @@ export default function Header(
         class="absolute w-full opacity-60 bg-no-repeat min-h-[936px] bg-center bg-cover lg:h-[1124px]"
         style={`
           background-image: url("${bgImage}");
+          opacity: ${bgOpacity};
         `}
       />
       <div
