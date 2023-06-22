@@ -20,7 +20,7 @@ export interface Image {
 export default function Card({ textUnder, card }: Props) {
   return (
     <div id="Cards">
-      <div className={"flex items-center flex-col w-[90%] mx-auto"}>
+      <div className={"flex items-center flex-col  mx-auto container"}>
         <p
           id={"TitleCards"}
           className={"flex flex-col lg:flex-row items-center lg:items-start lg:text-[64px] text-[32px] text-center max-w-[250px] lg:max-w-[100%] lg:leading-[125%] leading-[120%] gap-1 lg:gap-[0.2em]"}
@@ -37,7 +37,7 @@ export default function Card({ textUnder, card }: Props) {
         </p>
       </div>
       <div
-        className={"flex items-center flex-col w-[90%] lg:max-w-[90%] lg:flex-row lg:items-stretch lg:justify-around lg:gap-10 text-center max-w-[1440px]"}
+        className={"flex items-center flex-col w-[90%] container lg:flex-row lg:items-stretch lg:justify-around lg:gap-10 text-center mx-auto"}
       >
         {card.map((item, index) => (
           <div
