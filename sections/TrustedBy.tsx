@@ -4,7 +4,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface props {
   title: string;
-  images?: Image[]
+  images?: Image[];
 }
 
 export interface Image {

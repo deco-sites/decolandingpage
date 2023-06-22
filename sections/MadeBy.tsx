@@ -30,9 +30,16 @@ export default function MadeBy({ text, imageSize, devsCircle }: props) {
           className={"flex w-[100vw] lg:w-[auto] lg:flex-wrap lg:justify-center gap-y-10 mb-4 max-w-[1440px]"}
         >
           {devsCircle.map((dev, index) => (
-            <a key={index} href={dev.linkedin} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center px-4 w-44 gap-4 text-center group">
+            <a
+              key={index}
+              href={dev.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-col items-center px-4 w-44 gap-4 text-center group"
+            >
               <Image
-                src={dev.image || "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1493/ff1f2e56-d896-484b-b3bf-f411c0df4c3b"}
+                src={dev.image ||
+                  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1493/ff1f2e56-d896-484b-b3bf-f411c0df4c3b"}
                 alt={dev.label}
                 class="rounded-full min-w-[98px] group-hover:scale-110 duration-200"
                 width={imageSize}

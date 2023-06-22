@@ -71,15 +71,13 @@ export default function Footer(
               <use href="/symbols.svg#discordIcon" />
             </svg>
           </a>
-          {
-            linkWhatsapp && (
-              <a href={linkWhatsapp}>
-                <svg width="28" height="28">
-                  <use href="/symbols.svg#whatsappIcon" />
-                </svg>
-              </a>
-            )
-          }
+          {linkWhatsapp && (
+            <a href={linkWhatsapp}>
+              <svg width="28" height="28">
+                <use href="/symbols.svg#whatsappIcon" />
+              </svg>
+            </a>
+          )}
         </div>
         <p
           className={"text-[16px] text-[#f3fff9] font-[400] text-center mb-[40px] lg:mb-[64px]"}

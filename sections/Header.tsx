@@ -20,9 +20,7 @@ export default function Header(
           opacity: ${bgOpacity};
         `}
       />
-      <div
-        class="relative flex items-center flex-col gap-[21px] pt-[89px] lg:pt-[143px]"
-      >
+      <div class="relative flex items-center flex-col gap-[21px] pt-[89px] lg:pt-[143px]">
         <svg class="h-[46px]">
           <use href="/icons.svg#Logo" />
         </svg>
