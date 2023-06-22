@@ -37,7 +37,7 @@ export default function Card({ textUnder, card }: Props) {
         </p>
       </div>
       <div
-        className={"flex items-center flex-col mx-auto w-[90%] lg:max-w-[90%] lg:flex-row lg:items-stretch lg:justify-around lg:gap-10 text-center"}
+        className={"flex items-center flex-col w-[90%] lg:max-w-[90%] lg:flex-row lg:items-stretch lg:justify-around lg:gap-10 text-center max-w-[1440px]"}
       >
         {card.map((item, index) => (
           <div
