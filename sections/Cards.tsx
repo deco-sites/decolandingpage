@@ -37,7 +37,7 @@ export default function Card({ textUnder, card }: Props) {
         </p>
       </div>
       <div
-        className={"flex items-center flex-col mx-auto w-[90%] lg:max-w-[90%] lg:flex-row lg:items-center lg:justify-around"}
+        className={"flex items-center flex-col mx-auto w-[90%] lg:max-w-[90%] lg:flex-row lg:items-stretch lg:justify-around lg:gap-10 text-center"}
       >
         {card.map((item, index) => (
           <div
@@ -53,12 +53,12 @@ export default function Card({ textUnder, card }: Props) {
                 height={item.image.height}
               />
               <h2
-                className={"text-white text-[32px] mb-[20px] font-semibold lg:text-[43px]"}
+                className={"text-white text-[32px] mb-[20px] font-semibold lg:text-[43px] leading-[120%]"}
               >
                 {item.title}
               </h2>
               <p
-                className={"text-white max-w-[284px] text-[20px] lg:text-[24px] text-center lg:max-w-[275px] lg:min-h-[144px]"}
+                className={"text-white max-w-[284px] text-[20px] lg:text-[24px] text-center lg:max-w-[275px] lg:min-h-[144px] leading-[130%]"}
                 dangerouslySetInnerHTML={{ __html: item.description }}
               >
               </p>

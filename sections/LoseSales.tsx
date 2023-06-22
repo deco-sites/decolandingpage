@@ -28,7 +28,7 @@ export default function LoseSales({ principalText, bullets }: props) {
           {principalText}
         </h2>
         <div
-          className={"text-center flex flex-col lg:flex-row lg:flex lg:mb-[165px] gap-12 mb-[40px]"}
+          className={"text-center flex flex-col md:flex-row lg:flex lg:mb-[165px] gap-12 mb-[40px]"}
         >
           {bullets?.map((item, index) => (
             <div

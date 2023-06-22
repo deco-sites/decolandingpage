@@ -29,16 +29,16 @@ export default function Header(
         </p>
       </div>
       <div
-        className={"relative flex flex-col mx-8 lg:mx-auto lg:w-[90%] lg:max-w-[1000px] items-center lg:items-start"}
+        className={"relative flex flex-col mx-8 lg:mx-auto md:w-[90%] lg:max-w-[1000px] items-center md:items-start"}
       >
         <h1
-          className={"text-white text-[32px] mb-[28px] font-semibold lg:text-[73px] leading-[120%] lg:leading-[110%]"}
+          className={"text-white text-[32px] mb-[28px] font-semibold md:text-[73px] leading-[120%] md:leading-[110%]"}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h1>
         <p
           id={"Description"}
-          className={"text-white text-[20px] lg:text-[24px] leading-[30px] lg:leading-[35px]"}
+          className={"text-white text-[20px] md:text-[24px] leading-[30px] lg:leading-[35px]"}
           dangerouslySetInnerHTML={{ __html: description }}
         >
         </p>
