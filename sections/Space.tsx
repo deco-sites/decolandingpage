@@ -9,8 +9,9 @@ export default function Space({ spaceText }: props) {
     <div class="relative">
       {/* <Stars /> */}
       <div
-        class="flex items-center flex-col min-h-[262px] lg:min-h-[652px] mb-[60px]"
+        class="flex items-center flex-col min-h-[262px] lg:min-h-[652px] mb-[60px] bg-center bg-cover bg-no-repeat bg-[url(/stars-bg.png)]"
         id="space"
+
       >
         <h2
           class="text-white text-[32px] font-semibold lg:text-[73px] text-center absolute z-50 leading-[125%]"
