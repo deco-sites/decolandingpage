@@ -6,7 +6,7 @@ export interface props {
 
 export default function Space({ spaceText }: props) {
   return (
-    <div class="relative">
+    <div class="relative max-h-[265px] lg:max-h-[652px]">
       <Stars />
       <div
         class="flex items-center flex-col min-h-[262px] lg:min-h-[652px] mb-[60px]"
