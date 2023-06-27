@@ -10,16 +10,16 @@ const Stars = () => {
       return;
     } else {
       const space = document.getElementById(`space`) as HTMLElement,
-      spaceWidth = space.scrollWidth,
-      spaceHeight = space.scrollHeight,
-      perspective = 100;
+        spaceWidth = space.scrollWidth,
+        spaceHeight = space.scrollHeight,
+        perspective = 100;
       const frag = document.createDocumentFragment();
 
       space.style.setProperty(`--perspective`, `${perspective}px`);
 
       const MAX_ELEMENTS = 200;
 
-    // deno-lint-ignore no-inner-declarations
+      // deno-lint-ignore no-inner-declarations
       function makeStar(index: number) {
         const star = document.createElement(`time`),
           starWidth = gsap.utils.random(0.7, 1.1, 1),
