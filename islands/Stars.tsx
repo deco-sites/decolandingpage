@@ -3,61 +3,69 @@ import { useLayoutEffect } from "preact/hooks";
 
 const Stars = () => {
   useLayoutEffect(() => {
-    const space = document.getElementById(`space`) as HTMLElement,
+    //@tsignore
+    if (/(iPhone|iPod|iPad)/i.test(navigator.userAgent)) {
+      const space = document.getElementById(`space`) as HTMLElement;
+      space.style.backgroundImage = `url(/stars-bg.png)`;
+      return;
+    } else {
+      const space = document.getElementById(`space`) as HTMLElement,
       spaceWidth = space.scrollWidth,
       spaceHeight = space.scrollHeight,
       perspective = 100;
-    const frag = document.createDocumentFragment();
+      const frag = document.createDocumentFragment();
 
-    space.style.setProperty(`--perspective`, `${perspective}px`);
+      space.style.setProperty(`--perspective`, `${perspective}px`);
 
-    const MAX_ELEMENTS = 200;
+      const MAX_ELEMENTS = 200;
 
-    function makeStar(index: number) {
-      const star = document.createElement(`time`),
-        starWidth = gsap.utils.random(0.7, 1.1, 1),
-        starHeight = starWidth * gsap.utils.random(10, 20, 1),
-        randomRotation = Math.random() * 360,
-        scaleModifier = Math.random();
+    // deno-lint-ignore no-inner-declarations
+      function makeStar(index: number) {
+        const star = document.createElement(`time`),
+          starWidth = gsap.utils.random(0.7, 1.1, 1),
+          starHeight = starWidth * gsap.utils.random(10, 20, 1),
+          randomRotation = Math.random() * 360,
+          scaleModifier = Math.random();
 
-      const visibleRangeMaximum =
-        (spaceWidth - spaceHeight > 0 ? spaceWidth : spaceHeight) / 1.5;
+        const visibleRangeMaximum =
+          (spaceWidth - spaceHeight > 0 ? spaceWidth : spaceHeight) / 1.5;
 
-      gsap.set(star, {
-        width: `${starWidth}px`,
-        height: `${starHeight}px`,
-        backgroundColor: "#06E474",
-        transform: `
-      translateY(${starHeight / 2}px)
-      rotate(${randomRotation}deg)
-      rotateX(90deg)
-      translateZ(0px)
-      scaleX(${scaleModifier})
-    `,
-      });
+        gsap.set(star, {
+          width: `${starWidth}px`,
+          height: `${starHeight}px`,
+          backgroundColor: "#06E474",
+          transform: `
+        translateY(${starHeight / 2}px)
+        rotate(${randomRotation}deg)
+        rotateX(90deg)
+        translateZ(0px)
+        scaleX(${scaleModifier})
+      `,
+        });
 
-      gsap.to(star, {
-        duration: "random(10, 20)",
-        transform: `
-      translateY(${starHeight / 2}px)
-      rotate(${randomRotation}deg)
-      rotateX(90deg)
-      translateZ(${perspective + visibleRangeMaximum}px)
-      scaleX(${scaleModifier})
-    `,
-        repeat: -1,
-        ease: `none`,
-      }).progress(Math.random());
+        gsap.to(star, {
+          duration: "random(10, 20)",
+          transform: `
+        translateY(${starHeight / 2}px)
+        rotate(${randomRotation}deg)
+        rotateX(90deg)
+        translateZ(${perspective + visibleRangeMaximum}px)
+        scaleX(${scaleModifier})
+      `,
+          repeat: -1,
+          ease: `none`,
+        }).progress(Math.random());
 
-      frag.appendChild(star);
+        frag.appendChild(star);
 
-      if (index === MAX_ELEMENTS - 1) {
-        space.appendChild(frag);
+        if (index === MAX_ELEMENTS - 1) {
+          space.appendChild(frag);
+        }
       }
-    }
 
-    for (let i = 0; i < MAX_ELEMENTS; i++) {
-      setTimeout(makeStar, 0, i);
+      for (let i = 0; i < MAX_ELEMENTS; i++) {
+        setTimeout(makeStar, 0, i);
+      }
     }
   }, []);
 

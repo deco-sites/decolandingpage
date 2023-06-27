@@ -7,9 +7,9 @@ export interface props {
 export default function Space({ spaceText }: props) {
   return (
     <div class="relative">
-      {/* <Stars /> */}
+      <Stars />
       <div
-        class="flex items-center flex-col min-h-[262px] lg:min-h-[652px] mb-[60px] bg-center bg-cover bg-no-repeat bg-[url(/stars-bg.png)]"
+        class="flex items-center flex-col min-h-[262px] lg:min-h-[652px] mb-[60px] bg-center bg-cover bg-no-repeat"
         id="space"
       >
         <h2
